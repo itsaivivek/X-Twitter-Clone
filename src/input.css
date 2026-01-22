@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.leftContainer img{
+    @apply w-7 invert-100;
+}
+
+.leftContainer > div{
+    @apply flex gap-4 cursor-pointer hover:bg-neutral-900 px-5 py-2 rounded-4xl w-fit;
+}
