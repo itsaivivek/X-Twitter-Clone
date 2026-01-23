@@ -175,26 +175,11 @@
   }
 }
 @layer utilities {
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
-  .m-2\! {
-    margin: calc(var(--spacing) * 2) !important;
-  }
-  .m-3 {
-    margin: calc(var(--spacing) * 3);
-  }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
-  .ml-1 {
-    margin-left: calc(var(--spacing) * 1);
-  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
-  }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
   }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
@@ -202,47 +187,23 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
+  .h-14 {
+    height: calc(var(--spacing) * 14);
   }
-  .h-11 {
-    height: calc(var(--spacing) * 11);
-  }
-  .h-fit {
-    height: fit-content;
+  .h-15 {
+    height: calc(var(--spacing) * 15);
   }
   .h-screen {
     height: 100vh;
   }
-  .w-3xs {
-    width: var(--container-3xs);
-  }
   .w-3xs\! {
     width: var(--container-3xs) !important;
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-5\! {
     width: calc(var(--spacing) * 5) !important;
   }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
-  }
   .w-8\! {
     width: calc(var(--spacing) * 8) !important;
-  }
-  .w-11 {
-    width: calc(var(--spacing) * 11);
-  }
-  .w-14 {
-    width: calc(var(--spacing) * 14);
-  }
-  .w-14\! {
-    width: calc(var(--spacing) * 14) !important;
-  }
-  .w-60 {
-    width: calc(var(--spacing) * 60);
   }
   .w-60\! {
     width: calc(var(--spacing) * 60) !important;
@@ -256,11 +217,11 @@
   .w-\[44\%\] {
     width: 44%;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .w-full {
+    width: 100%;
   }
-  .resize {
-    resize: both;
+  .grow {
+    flex-grow: 1;
   }
   .flex-col {
     flex-direction: column;
@@ -280,8 +241,8 @@
   .gap-1\! {
     gap: calc(var(--spacing) * 1) !important;
   }
-  .overflow-hidden {
-    overflow: hidden;
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -289,19 +250,9 @@
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
-  }
-  .rounded-full\! {
-    border-radius: calc(infinity * 1px) !important;
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
-  }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
   }
   .bg-black {
     background-color: var(--color-black);
@@ -309,47 +260,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .object-cover {
-    object-fit: cover;
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
   .p-2\! {
     padding: calc(var(--spacing) * 2) !important;
-  }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
-  .p-3\! {
-    padding: calc(var(--spacing) * 3) !important;
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
-  .p-4\! {
-    padding: calc(var(--spacing) * 4) !important;
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
-  .px-2\! {
-    padding-inline: calc(var(--spacing) * 2) !important;
   }
   .px-12 {
     padding-inline: calc(var(--spacing) * 12);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-2\! {
-    padding-block: calc(var(--spacing) * 2) !important;
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -382,23 +300,11 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .invert-0 {
-    --tw-invert: invert(0%);
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .invert-0\! {
-    --tw-invert: invert(0%) !important;
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,) !important;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  .placeholder\:text-xl {
+    &::placeholder {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
   }
   .hover\:bg-white\! {
     &:hover {
@@ -427,6 +333,39 @@
     }
   }
 }
+.middleContainer img {
+  width: calc(var(--spacing) * 5);
+  --tw-invert: invert(0%);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+}
+.middleContainer > div {
+  display: flex;
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+}
+.middleContainer .feedHeader >div {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-neutral-900);
+    }
+  }
+}
+.profilePicture {
+  height: calc(var(--spacing) * 11);
+  width: calc(var(--spacing) * 11);
+  overflow: hidden;
+  border-radius: calc(infinity * 1px);
+}
+.profilePicture >img {
+  width: calc(var(--spacing) * 14) !important;
+  object-fit: cover;
+  --tw-invert: invert(0%) !important;
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,) !important;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
@@ -435,11 +374,6 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -499,7 +433,6 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;

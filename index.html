@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./src/output.css">
 
 </head>
+
 <body>
     <main class="flex">
         <section class="leftContainer w-[24%] h-screen flex flex-col gap-1 px-12 py-2 text-xl text-white bg-black">
@@ -61,10 +63,12 @@
                 </div>
                 <div class="moreText">More</div>
             </div>
-            <div class="PostButton items-center justify-center border-2 rounded-3xl py-3! text-base text-black bg-white w-60! font-bold hover:bg-white!">Post</div>
+            <div
+                class="PostButton items-center justify-center rounded-3xl py-3! text-base text-black bg-white w-60! font-bold hover:bg-white!">
+                Post</div>
             <div class="profileId justify-start items-center rounded-4xl py-3 mt-12 gap-1! w-3xs!">
-                <div class="profilePicture h-11 w-11 overflow-hidden rounded-full">
-                    <img class="object-cover w-14! invert-0!" src="./img/profilepicture.jpg" alt="Picture">
+                <div class="profilePicture">
+                    <img src="./img/profilepicture.jpg" alt="Picture">
                 </div>
                 <div class="profileText">
                     <div class="name text-base font-bold">Vivek Bhatt</div>
@@ -75,12 +79,46 @@
                 </div>
             </div>
         </section>
-        <section class="middleContainer border-2 w-[44%] h-screen">
 
+
+        <section class="middleContainer border w-[44%] h-screen flex flex-col">
+            <div class="feedHeader h-14">
+                <div class="forYouTab font-bold">For you</div>
+                <div class="followingTab">Following</div>
+            </div>
+            <div class="postComposerBox flex-col gap-2">
+                <div class="firstSection flex gap-2">
+                    <div class="profilePicture">
+                        <img src="img/profilepicture.jpg" alt="">
+                    </div>
+                    <div class="textField border grow">
+                        <input class="border w-full h-15 placeholder:text-xl" type="text" name="textpost" id="textpost" placeholder="What's happening?">
+                        <div class="whoCanReply">
+                            <div class="globeIcon"><img src="./svg/globe.svg" alt=""></div>
+                            <div class="everyone">Everyone can reply</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="secondSection">
+                    <div class="extraIconBox">
+                        <div class="photosIcon"></div>
+                        <div class="gifIcon"></div>
+                        <div class="blueGrokIcon"></div>
+                        <div class="pollIcon"></div>
+                        <div class="emojiIcon"></div>
+                        <div class="scheduleIcon"></div>
+                        <div class="mapIcon"></div>
+                    </div>
+                    <div class="postBox">Post</div>
+                </div>
+            </div>
         </section>
-        <section class="rightContainer border-2 w-[32%] h-screen">
+
+
+        <section class="rightContainer w-[32%] h-screen">
 
         </section>
     </main>
 </body>
+
 </html>

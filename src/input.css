@@ -8,3 +8,21 @@
 .leftContainer > div{
     @apply flex gap-4 cursor-pointer hover:bg-neutral-900 px-5 py-2 rounded-4xl w-fit;
 }
+
+.middleContainer img{
+    @apply w-5 invert-0;
+}
+.middleContainer > div{
+    @apply flex border;
+}
+
+.middleContainer .feedHeader >div{
+    @apply flex justify-center items-center flex-1 hover:bg-neutral-900;
+}
+
+.profilePicture{
+    @apply h-11 w-11 overflow-hidden rounded-full;
+}
+.profilePicture >img{
+    @apply object-cover w-14! invert-0!;
+}
