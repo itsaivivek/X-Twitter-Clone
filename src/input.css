@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 
+.filter-brand-blue {
+    filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
+}
+
 .leftContainer img{
     @apply w-7 invert-100;
 }
@@ -10,10 +14,10 @@
 }
 
 .middleContainer img{
-    @apply w-5 invert-0;
+    @apply w-5.5;
 }
 .middleContainer > div{
-    @apply flex border;
+    @apply flex border-b border-neutral-700 bg-black text-white;
 }
 
 .middleContainer .feedHeader >div{
@@ -25,4 +29,12 @@
 }
 .profilePicture >img{
     @apply object-cover w-14! invert-0!;
+}
+
+.middleContainer .postComposerBox .secondSection .extraIconBox > div{
+    @apply p-1.5 rounded-full hover:bg-neutral-700
+}
+
+.middleContainer .postComposerBox .secondSection .extraIconBox img{
+  filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
 }
