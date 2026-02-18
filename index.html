@@ -82,7 +82,7 @@
 
 
         <section class="middleContainer border-x border-neutral-700 w-[44%] h-screen flex flex-col">
-            <div class="feedHeader h-14">
+            <div class="feedHeader min-h-14">
                 <div class="forYouTab font-bold relative cursor-pointer">
                     <div class="underline w-14 bottom-0 rounded-4xl h-1 bg-sky-500 absolute"></div>For you
                 </div>
@@ -101,7 +101,7 @@
                         <div class="whoCanReply border-b border-neutral-700 pb-3 mr-6">
                             <div
                                 class="replyBox cursor-pointer gap-1 py-0.5 px-3 rounded-4xl hover:bg-[#0b283b71] inline-flex">
-                                <div class="globeIcon"><img class="filter-brand-blue w-4.5!" src="./svg/globe.svg"
+                                <div class="globeIcon"><img class="filter-(--filter-custom-teal) w-4.5!" src="./svg/globe.svg"
                                         alt=""></div>
                                 <div class="everyone text-sm text-sky-500">Everyone can reply</div>
                             </div>
@@ -137,52 +137,25 @@
             </div>
             <div class="someonePost">
                 <div class="profilePicture m-2 cursor-pointer">
-                    <img src="img/ElonMusk.jpg" alt="">
+                    <img src="img/profilepicture.jpg" alt="">
                 </div>
-                <div class="postBox">
-                    <div class="topSection">
-                        <div class="personalInfo">
-                            <div class="someoneName">Elon Musk</div>
+
+                <div class="topSection grow">
+                    <div class="personalInfo flex">
+                            <div class="someoneName font-semibold">Elon Musk</div>
                             <div class="bluetick">
-                                <img src="svg/bluetick.svg" alt="">
+                                <img class="filter-(--filter-custom-teal)" src="svg/bluetick.svg" alt="">
                             </div>
                             <div class="username">@elonmusk</div>
                             <div class="uploadedTime">14h</div>
                         </div>
-                        <div class="MoreIcons">
-                            <div class="grokIcon">
-                                <img src="svg/grok.svg" alt="grok">
-                            </div>
-                            <div class="horizontalDots ml-12">
-                                <img class="w-5!" src="./svg/horizontalDots.svg" alt="...">
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div class="middleSection">
-                        JavaScript is a versatile, dynamically typed programming language that brings life to web pages by making them interactive. It is used for building interactive web applications, supports both client-side and server-side development, and integrates seamlessly with HTML, CSS, and a rich standard library. 
-                    </div>
-
-                    <div class="bottomSection">
-                        <div class="replyButton">
-                            <img src="svg/reply.svg" alt="">
-                            <span>20K</span>
-                        </div>
-                        <div class="repostButton">
-                            <img src="svg/repost.svg" alt="">
-                            <span>24K</span>
-                        </div>
-                        <div class="likeButton">
-                            <img src="svg/like.svg" alt="">
-                            <span>200K</span>
-                        </div>
-                        <div class="viewButton">
-                            <img src="svg/view.svg" alt="">
-                            <span>30M</span>
-                        </div>
-                        <div class="extras">
-                            <img src="svg/bookmark.svg" alt="">
-                            <img src="svg/share.svg" alt="">
+                    <div class="whoCanReply border-b border-neutral-700 pb-3 mr-6">
+                        <div
+                            class="replyBox cursor-pointer gap-1 py-0.5 px-3 rounded-4xl hover:bg-[#0b283b71] inline-flex">
+                            <div class="globeIcon"><img class="filter-brand-blue w-4.5!" src="./svg/globe.svg" alt="">
+                            </div>
+                            <div class="everyone text-sm text-sky-500">Everyone can reply</div>
                         </div>
                     </div>
                 </div>

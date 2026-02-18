@@ -1,40 +1,47 @@
 @import "tailwindcss";
 
-
-.filter-brand-blue {
-    filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
+@theme {
+    --filter-custom-teal: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
 }
 
-.leftContainer img{
+
+.leftContainer img {
     @apply w-7 invert-100;
 }
 
-.leftContainer > div{
+.leftContainer>div {
     @apply flex gap-4 cursor-pointer hover:bg-neutral-900 px-5 py-2 rounded-4xl w-fit;
 }
 
-.middleContainer img{
+.middleContainer img {
     @apply w-5.5;
 }
-.middleContainer > div{
+
+.middleContainer>div {
     @apply flex border-b border-neutral-700 bg-black text-white;
 }
 
-.middleContainer .feedHeader >div{
+.middleContainer .feedHeader>div {
     @apply flex justify-center items-center flex-1 hover:bg-neutral-900;
 }
 
-.profilePicture{
+.profilePicture {
     @apply h-11 w-11 overflow-hidden rounded-full;
 }
-.profilePicture >img{
-    @apply object-cover w-14! invert-0!;
+
+.profilePicture>img {
+    @apply object-cover w-14 ! invert-0 !;
 }
 
-.middleContainer .postComposerBox .secondSection .extraIconBox > div{
+.middleContainer .postComposerBox .secondSection .extraIconBox>div {
     @apply p-1.5 rounded-full hover:bg-[#0b283b71] cursor-pointer;
 }
 
-.middleContainer .postComposerBox .secondSection .extraIconBox img{
-  filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
+.middleContainer .postComposerBox .secondSection .extraIconBox img {
+    /* filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%); */
+    @apply filter-(--filter-custom-teal);
+}
+
+.middleContainer .someonePost .bottomSection img {
+    @apply invert-50;
 }

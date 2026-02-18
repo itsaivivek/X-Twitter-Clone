@@ -30,6 +30,7 @@
     --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --filter-custom-teal: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
   }
 }
 @layer base {
@@ -223,14 +224,14 @@
   .h-1 {
     height: calc(var(--spacing) * 1);
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-14 {
+    min-height: calc(var(--spacing) * 14);
   }
   .w-3xs {
     width: var(--container-3xs);
@@ -460,6 +461,18 @@
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
+  .filter-\(--filter\) {
+    filter: var(--filter);
+  }
+  .filter-\(--filter-brand-blue\) {
+    filter: var(--filter-brand-blue);
+  }
+  .filter-\(--filter-custom\) {
+    filter: var(--filter-custom);
+  }
+  .filter-\(--filter-custom-teal\) {
+    filter: var(--filter-custom-teal);
+  }
   .placeholder\:text-xl {
     &::placeholder {
       font-size: var(--text-xl);
@@ -480,28 +493,10 @@
       }
     }
   }
-  .focus\:border {
-    &:focus {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
-  }
   .focus\:border-none {
     &:focus {
       --tw-border-style: none;
       border-style: none;
-    }
-  }
-  .focus\:outline {
-    &:focus {
-      outline-style: var(--tw-outline-style);
-      outline-width: 1px;
-    }
-  }
-  .focus\:outline-0 {
-    &:focus {
-      outline-style: var(--tw-outline-style);
-      outline-width: 0px;
     }
   }
   .focus\:outline-none {
@@ -510,9 +505,6 @@
       outline-style: none;
     }
   }
-}
-.filter-brand-blue {
-  filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
 }
 .leftContainer img {
   width: calc(var(--spacing) * 7);
@@ -579,6 +571,10 @@
 }
 .middleContainer .postComposerBox .secondSection .extraIconBox img {
   filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
+}
+.middleContainer .someonePost .bottomSection img {
+  --tw-invert: invert(50%);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 }
 @property --tw-border-style {
   syntax: "*";
