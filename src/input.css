@@ -4,9 +4,8 @@
     --filter-custom-teal: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
 }
 
-
 .leftContainer img {
-    @apply w-7 invert-100;
+    @apply w-7 invert;
 }
 
 .leftContainer>div {
@@ -40,8 +39,4 @@
 .middleContainer .postComposerBox .secondSection .extraIconBox img {
     /* filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%); */
     @apply filter-(--filter-custom-teal);
-}
-
-.middleContainer .someonePost .bottomSection img {
-    @apply invert-50;
 }
