@@ -29,7 +29,7 @@
 }
 
 .profilePicture>img {
-    @apply object-cover w-14 ! invert-0 !;
+    @apply object-cover w-14! invert-0!;
 }
 
 .middleContainer .postComposerBox .secondSection .extraIconBox>div {
@@ -39,4 +39,18 @@
 .middleContainer .postComposerBox .secondSection .extraIconBox img {
     /* filter: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%); */
     @apply filter-(--filter-custom-teal);
+}
+
+.someonePost .topSection div{
+    @apply flex items-center;
+}
+
+.someonePost .topSection .moreIcons img {
+    @apply invert-50 w-5;
+}
+.someonePost .bottomSection img{
+    @apply invert-50 w-4.5;
+}
+.someonePost .bottomSection > div{
+    @apply flex;
 }
