@@ -194,8 +194,23 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
+  .my-2\.5 {
+    margin-block: calc(var(--spacing) * 2.5);
+  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-2\.5 {
+    margin-top: calc(var(--spacing) * 2.5);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
@@ -214,9 +229,6 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
-  }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
   }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
@@ -320,6 +332,12 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
+  .gap-0\.5 {
+    gap: calc(var(--spacing) * 0.5);
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
   }
@@ -328,6 +346,18 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-\[1p\] {
+    gap: 1p;
+  }
+  .gap-\[1px\] {
+    gap: 1px;
+  }
+  .gap-px {
+    gap: 1px;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -441,14 +471,8 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .break-words {
-    overflow-wrap: break-word;
-  }
   .wrap-break-word {
     overflow-wrap: break-word;
-  }
-  .break-all {
-    word-break: break-all;
   }
   .text-black {
     color: var(--color-black);
@@ -488,6 +512,9 @@
   }
   .filter-\(--filter-custom-teal\) {
     filter: var(--filter-custom-teal);
+  }
+  .filter-\(--filter-custom-teal\)\! {
+    filter: var(--filter-custom-teal) !important;
   }
   .placeholder\:text-xl {
     &::placeholder {
@@ -592,13 +619,8 @@
   display: flex;
   align-items: center;
 }
-.someonePost .topSection .moreIcons img {
+.someonePost .postBox img {
   width: calc(var(--spacing) * 5);
-  --tw-invert: invert(50%);
-  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-}
-.someonePost .bottomSection img {
-  width: calc(var(--spacing) * 4.5);
   --tw-invert: invert(50%);
   filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
 }

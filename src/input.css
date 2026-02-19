@@ -45,12 +45,10 @@
     @apply flex items-center;
 }
 
-.someonePost .topSection .moreIcons img {
+.someonePost .postBox img {
     @apply invert-50 w-5;
 }
-.someonePost .bottomSection img{
-    @apply invert-50 w-4.5;
-}
+
 .someonePost .bottomSection > div{
     @apply flex;
 }
