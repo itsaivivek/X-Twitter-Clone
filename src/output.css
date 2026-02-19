@@ -191,12 +191,6 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-1 {
-    bottom: calc(var(--spacing) * 1);
-  }
-  .bottom-3 {
-    bottom: calc(var(--spacing) * 3);
-  }
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
@@ -205,6 +199,9 @@
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
+  }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
   }
   .mr-6 {
     margin-right: calc(var(--spacing) * 6);
@@ -218,11 +215,17 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
   }
   .flex {
     display: flex;
+  }
+  .grid {
+    display: grid;
   }
   .inline-flex {
     display: inline-flex;
@@ -241,12 +244,6 @@
   }
   .min-h-14 {
     min-height: calc(var(--spacing) * 14);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
-  .w-3\! {
-    width: calc(var(--spacing) * 3) !important;
   }
   .w-3xs {
     width: var(--container-3xs);
@@ -284,17 +281,11 @@
   .w-60\! {
     width: calc(var(--spacing) * 60) !important;
   }
-  .w-\[24\%\] {
-    width: 24%;
-  }
-  .w-\[32\%\] {
-    width: 32%;
-  }
-  .w-\[44\%\] {
-    width: 44%;
-  }
   .w-full {
     width: 100%;
+  }
+  .min-w-0 {
+    min-width: calc(var(--spacing) * 0);
   }
   .flex-grow {
     flex-grow: 1;
@@ -311,14 +302,14 @@
   .resize {
     resize: both;
   }
+  .grid-cols-\[24\%_44\%_32\%\] {
+    grid-template-columns: 24% 44% 32%;
+  }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
-  }
-  .items-start {
-    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -422,12 +413,6 @@
   .pl-14\.5 {
     padding-left: calc(var(--spacing) * 14.5);
   }
-  .align-bottom {
-    vertical-align: bottom;
-  }
-  .align-top {
-    vertical-align: top;
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -455,6 +440,15 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .break-words {
+    overflow-wrap: break-word;
+  }
+  .wrap-break-word {
+    overflow-wrap: break-word;
+  }
+  .break-all {
+    word-break: break-all;
   }
   .text-black {
     color: var(--color-black);

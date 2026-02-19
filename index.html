@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <main class="flex bg-black">
-        <section class="leftContainer w-[24%] h-screen flex flex-col gap-1 px-12 py-2 text-xl text-white bg-black">
+    <main class="grid bg-black grid-cols-[24%_44%_32%]">
+        <section class="leftContainer h-screen flex flex-col gap-1 px-12 py-2 text-xl text-white bg-black">
             <div class="logo p-2! ml-2">
                 <img class="w-8!" src="svg/logo.svg" alt="Logo">
             </div>
@@ -81,7 +81,7 @@
         </section>
 
 
-        <section class="middleContainer border-x border-neutral-700 w-[44%] h-screen flex flex-col gap-2">
+        <section class="middleContainer border-x border-neutral-700 h-screen flex flex-col gap-2">
             <div class="feedHeader min-h-14">
                 <div class="forYouTab font-bold relative cursor-pointer">
                     <div class="underline w-14 bottom-0 rounded-4xl h-1 bg-sky-500 absolute"></div>For you
@@ -142,8 +142,8 @@
                         <img src="img/ElonMusk.jpg" alt="">
                     </div>
                 </div>
-                <div class="postBox grow mt-1">
-                    <div class="topSection flex">
+                <div class="postBox mt-1 min-w-0">
+                    <div class="topSection flex justify-between">
                         <div class="personalInfo">
                             <div class="someoneName font-semibold">Elon Musk</div>
                             <div class="bluetick flex items-center">
@@ -156,19 +156,19 @@
                             <div class="uploadedTime text-sm text-neutral-500">14h</div>
                         </div>
 
-                        <div class="moreIcons flex">
-                            <div class="grokIcon">
+                        <div class="moreIcons flex gap-2 mr-4">
+                            <div class="grokIcon ">
                                 <img src="svg/grok.svg" alt="grok">
                             </div>
-                            <div class="horizontalDots ml-12">
+                            <div class="horizontalDots">
                                 <img class="w-5!" src="./svg/horizontalDots.svg" alt="...">
                             </div>
                         </div>
                     </div>
-                     <div class="middleSection">
+                    <div class="middleSection wrap-break-word mr-4">
                         JavaScript is a versatile, dynamically typed programming language that brings life to web pages by making them interactive. It is used for building interactive web applications, supports both client-side and server-side development, and integrates seamlessly with HTML, CSS, and a rich standard library. 
                     </div>
-                       <div class="bottomSection flex">
+                    <div class="bottomSection flex">
                         <div class="replyButton">
                             <img src="svg/reply.svg" alt="">
                             <span>20K</span>
@@ -197,7 +197,7 @@
         </section>
 
 
-        <section class="rightContainer w-[32%] h-screen">
+        <section class="rightContainer h-screen">
 
         </section>
     </main>
