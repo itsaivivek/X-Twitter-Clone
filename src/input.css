@@ -52,3 +52,10 @@
 .someonePost .bottomSection > div{
     @apply flex;
 }
+
+.rightContainer img {
+    @apply w-5 invert;
+}
+.rightContainer div{
+    @apply  flex;
+}
