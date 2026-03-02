@@ -59,3 +59,15 @@
 .rightContainer div{
     @apply  flex;
 }
+
+.viewedBy {
+    @apply h-7 w-6 overflow-hidden rounded-full;
+}
+
+.viewedBy>img {
+    @apply object-cover w-14! invert-0!;
+}
+
+.todayNews .newsBox > div{
+    @apply hover:bg-neutral-950 cursor-pointer flex flex-col px-5 py-3 gap-2;
+}

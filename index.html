@@ -95,8 +95,7 @@
                         <img src="img/profilepicture.jpg" alt="">
                     </div>
                     <div class="textField grow">
-                        <textarea
-                            rows="1"
+                        <textarea rows="1"
                             class="w-full py-2 overflow-hidden placeholder:text-xl font-normal focus:outline-none focus:border-none text-xl wrap-break-word resize-none bg-transparent"
                             name="textpost" id="textpost" placeholder="What's happening?"></textarea>
                         <div class="whoCanReply border-b border-neutral-700 pb-3 mr-6">
@@ -206,17 +205,98 @@
         <section class="rightContainer h-screen flex flex-col gap-4 pl-8 pr-14 py-1 text-white bg-black text-[15px]">
             <div class="searchBar flex py-2 px-3 rounded-4xl border border-neutral-700 gap-1">
                 <div class="searchLogo"><img class="invert-50! w-4!" src="./svg/explore.svg" alt=""></div>
-                <input type="search" class="focus:border-none focus:outline-none caret-sky-500 placeholder:text-white" id="gsearch" name="gsearch" placeholder="Search">
+                <input type="search" class="focus:border-none focus:outline-none caret-sky-500 placeholder:text-white"
+                    id="gsearch" name="gsearch" placeholder="Search">
             </div>
 
-              <div class="subscribeToPremium border border-neutral-700 rounded-2xl px-5 py-4 flex-col gap-2 leading-tight">
+            <div
+                class="subscribeToPremium border border-neutral-700 rounded-2xl px-5 py-4 flex-col gap-2 leading-tight">
                 <div class="titleBar flex items-center gap-2">
                     <div class="title text-xl font-bold">Subscribe to Premium</div>
                     <div class="discount bg-[#004329] rounded-md px-1.5 py-0.5 font-medium text-[#61d6a3]">50% off</div>
                 </div>
                 <div class="description">Get rid of ads, see your analytics, boost your replies and unlock 20+ features.
                 </div>
-                <div class="subscribe w-fit px-4 py-2 rounded-4xl bg-sky-500 font-bold mt-2 cursor-pointer">Subscribe</div>
+                <div class="subscribe w-fit px-4 py-2 rounded-4xl bg-sky-500 font-bold mt-2 cursor-pointer">Subscribe
+                </div>
+            </div>
+
+            <div class="todayNews border border-neutral-700 rounded-2xl flex flex-col py-4 gap-2">
+                <div class="titleBar flex justify-between px-5">
+                    <div class="title text-xl font-bold">Today's News</div>
+                    <div class="cross p-2 cursor-pointer rounded-full hover:bg-neutral-900"><img class="w-4!" src="./svg/cross.svg" alt=""></div>
+                </div>
+                <div class="newsBox flex flex-col leading-tight">
+                    <div class="news1">
+                        <div class="newsHeadline font-bold">U.S. and Israel Strike Iran, Kill Khamenei in Operation Epic Fury</div>
+                        <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
+                            <div class="viewedByBox flex">
+                                <div class="viewedBy z-3">
+                                    <img src="img/narendraModi.jpg" alt="">
+                                </div>
+                                <div class="viewedBy z-2 -ml-3">
+                                    <img src="img/ElonMusk.jpg" alt="">
+                                </div>
+                                <div class="viewedBy z-1 -ml-3">
+                                    <img src="img/balen.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="extraData flex items-center">
+                                <div class="daysago">3 days ago</div>
+                                <img class="w-3! invert-50! h-fit" src="./svg/dot-svgrepo-com.svg" alt="">
+                                <div class="tag">News</div>
+                                <img class="w-3! invert-50! h-fit" src="./svg/dot-svgrepo-com.svg" alt="">
+                                <div class="numberOfPosts">15.8M posts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <div class="newsHeadline font-bold">Three U.S. service members killed in Iranian missile and drone attacks during Operation</div>
+                        <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
+                            <div class="viewedByBox flex">
+                                <div class="viewedBy z-3">
+                                    <img src="img/sacar.jpg" alt="">
+                                </div>
+                                <div class="viewedBy z-2 -ml-3">
+                                    <img src="img/kp oli.jpg" alt="">
+                                </div>
+                                <div class="viewedBy z-1 -ml-3">
+                                    <img src="img/donaldTrump.jpeg" alt="">
+                                </div>
+                            </div>
+                            <div class="extraData flex items-center">
+                                <div class="daysago">3 days ago</div>
+                                <img class="w-3! invert-50! h-fit" src="./svg/dot-svgrepo-com.svg" alt="">
+                                <div class="tag">News</div>
+                                <img class="w-3! invert-50! h-fit" src="./svg/dot-svgrepo-com.svg" alt="">
+                                <div class="numberOfPosts">182K posts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news3">
+                        <div class="newsHeadline font-bold">Anthropic Blacklisted by Trump After Rejecting Pentagon AI Demands</div>
+                        <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
+                            <div class="viewedByBox flex">
+                                <div class="viewedBy z-3">
+                                    <img src="img/donaldTrump.jpeg" alt="">
+                                </div>
+                                <div class="viewedBy z-2 -ml-3">
+                                    <img src="img/ElonMusk.jpg" alt="">
+                                </div>
+                                <div class="viewedBy z-1 -ml-3">
+                                    <img src="img/kp oli.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="extraData flex items-center">
+                                <div class="daysago">3 days ago</div>
+                                <img class="w-3! invert-50! h-fit" src="./svg/dot-svgrepo-com.svg" alt="">
+                                <div class="tag">News</div>
+                                <img class="w-3! invert-50! h-fit" src="./svg/dot-svgrepo-com.svg" alt="">
+                                <div class="numberOfPosts">49.5K posts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
