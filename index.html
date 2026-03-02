@@ -202,7 +202,8 @@
         </section>
 
 
-        <section class="rightContainer h-screen flex flex-col gap-4 pl-8 pr-14 py-1 text-white bg-black text-[15px] overflow-y-scroll">
+        <section
+            class="rightContainer h-screen flex flex-col gap-4 pl-8 pr-14 py-1 text-white bg-black text-[15px] overflow-y-scroll">
             <div class="searchBar flex py-2 px-3 rounded-4xl border border-neutral-700 gap-1">
                 <div class="searchLogo"><img class="invert-50!" src="./svg/explore.svg" alt=""></div>
                 <input type="search" class="focus:border-none focus:outline-none caret-sky-500 placeholder:text-white"
@@ -224,11 +225,13 @@
             <div class="todayNews border border-neutral-700 rounded-2xl flex flex-col py-4 gap-2">
                 <div class="titleBar flex justify-between px-5">
                     <div class="title text-xl font-bold">Today's News</div>
-                    <div class="cross p-2 cursor-pointer rounded-full hover:bg-neutral-900"><img src="./svg/cross.svg" alt=""></div>
+                    <div class="cross p-2 cursor-pointer rounded-full hover:bg-neutral-900"><img src="./svg/cross.svg"
+                            alt=""></div>
                 </div>
                 <div class="newsBox flex flex-col leading-tight">
                     <div class="news1">
-                        <div class="newsHeadline font-bold">U.S. and Israel Strike Iran, Kill Khamenei in Operation Epic Fury</div>
+                        <div class="newsHeadline font-bold">U.S. and Israel Strike Iran, Kill Khamenei in Operation Epic
+                            Fury</div>
                         <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
                             <div class="viewedByBox flex">
                                 <div class="viewedBy z-3">
@@ -251,7 +254,8 @@
                         </div>
                     </div>
                     <div class="news2">
-                        <div class="newsHeadline font-bold">Three U.S. service members killed in Iranian missile and drone attacks during Operation</div>
+                        <div class="newsHeadline font-bold">Three U.S. service members killed in Iranian missile and
+                            drone attacks during Operation</div>
                         <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
                             <div class="viewedByBox flex">
                                 <div class="viewedBy z-3">
@@ -274,7 +278,8 @@
                         </div>
                     </div>
                     <div class="news3">
-                        <div class="newsHeadline font-bold">Anthropic Blacklisted by Trump After Rejecting Pentagon AI Demands</div>
+                        <div class="newsHeadline font-bold">Anthropic Blacklisted by Trump After Rejecting Pentagon AI
+                            Demands</div>
                         <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
                             <div class="viewedByBox flex">
                                 <div class="viewedBy z-3">
@@ -307,7 +312,8 @@
                     <div class="trend1">
                         <div class="upperBox flex justify-between text-sm">
                             <div class="caption text-neutral-500">Trending in Nepal</div>
-                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt=""></div>
+                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt="">
+                            </div>
                         </div>
                         <div class="lowerBox font-bold">
                             <span>#Dubai</span>
@@ -316,7 +322,8 @@
                     <div class="trend2">
                         <div class="upperBox flex justify-between text-sm">
                             <div class="caption text-neutral-500">Trending</div>
-                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt=""></div>
+                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt="">
+                            </div>
                         </div>
                         <div class="lowerBox font-bold">
                             <span>#IsraelIranConflict</span>
@@ -325,7 +332,8 @@
                     <div class="trend3">
                         <div class="upperBox flex justify-between text-sm">
                             <div class="caption text-neutral-500">Trending . Politics</div>
-                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt=""></div>
+                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt="">
+                            </div>
                         </div>
                         <div class="lowerBox font-bold">
                             <span>balen</span>
@@ -334,7 +342,8 @@
                     <div class="trend4">
                         <div class="upperBox flex justify-between text-sm">
                             <div class="caption text-neutral-500">Trending</div>
-                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt=""></div>
+                            <div class="horizontalDots"><img class="invert-50!" src="/svg/horizontalDots.svg" alt="">
+                            </div>
                         </div>
                         <div class="lowerBox font-bold">
                             <span>sacar vs prachanda</span>
@@ -343,9 +352,43 @@
                     <div class="showMore text-sky-500">Show more</div>
                 </div>
             </div>
+
+            <div class="footer flex flex-col text-xs text-neutral-500 px-5 mb-20 gap-2">
+                <div class="flex gap-2">
+                    <a href="#">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Cookie Policy</a>
+                    <span>|</span>
+                </div>
+                <div class="flex gap-2">
+                    <a href="#">Accessibility</a>
+                    <span>|</span>
+                    <a href="#">Ads info</a>
+                    <span>|</span>
+                    <a href="#">More...</a>
+                    <span>&copy; 2026 X Corp.</span>
+                </div>
+            </div>
         </section>
     </main>
 
+    <div class="fixedButtons fixed bottom-3 right-6 flex flex-col gap-4">
+
+        <!-- Button 1 -->
+        <div class="button1">
+
+            <img src="./svg/grok.svg" class="w-8 h-8 invert" alt="">
+        </div>
+
+        <!-- Button 2 -->
+        <div class="button2">
+
+            <img src="./svg/chat.svg" class="w-8 h-8 invert" alt="">
+        </div>
+
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

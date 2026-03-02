@@ -78,3 +78,20 @@
 .whatsHappening .trendContainer > div{
     @apply flex flex-col px-5 py-3 hover:bg-neutral-950 cursor-pointer;
 }
+
+.footer > div > a{
+    @apply hover:underline;
+}
+
+.fixedButtons img{
+    @apply w-8 invert;
+}
+
+.fixedButtons > div {
+    @apply relative w-14 h-14 flex items-center justify-center bg-black rounded-2xl cursor-pointer;
+}
+
+.fixedButtons > div::before {
+    content: "";
+    @apply absolute -inset-0.5 rounded-2xl bg-white blur-xs opacity-50 -z-10;
+}
