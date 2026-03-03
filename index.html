@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <main class="grid bg-black grid-cols-[24%_44%_32%]">
-        <section class="leftContainer h-screen flex flex-col gap-1 px-12 py-2 text-xl text-white bg-black">
+    <main class="grid bg-black grid-cols-[24%_44%_32%] max-lg:grid-cols-[10%_55%_35%] max-md:grid-cols-[15%_85%_0] max-sm:grid-cols-[20%_80%_0]">
+        <section class="leftContainer h-screen flex flex-col gap-1 px-12 py-2 text-xl text-white bg-black max-lg:px-4 max-lg:items-center">
             <div class="logo p-2! ml-2">
                 <img class="w-8!" src="svg/logo.svg" alt="Logo">
             </div>
@@ -64,9 +64,9 @@
                 <div class="moreText">More</div>
             </div>
             <div
-                class="PostButton items-center justify-center rounded-3xl py-3! text-base text-black bg-white w-60! font-bold hover:bg-white!">
+                class="PostButton items-center justify-center rounded-3xl py-3! text-base text-black bg-white w-60! max-xl:w-48! max-lg:hidden! font-bold hover:bg-white!">
                 Post</div>
-            <div class="profileId justify-start items-center rounded-4xl py-3 mt-12 gap-1! w-3xs!">
+            <div class="profileId justify-start items-center rounded-4xl py-3 mt-12 gap-1! w-3xs! max-xl:w-52! max-lg:w-fit!">
                 <div class="profilePicture">
                     <img src="./img/profilepicture.jpg" alt="Picture">
                 </div>
@@ -74,7 +74,7 @@
                     <div class="name text-base font-bold">Vivek Bhatt</div>
                     <div class="username text-sm text-neutral-500">@itsaivivek</div>
                 </div>
-                <div class="horizontalDots ml-12">
+                <div class="horizontalDots ml-12 max-xl:ml-1">
                     <img class="w-5!" src="./svg/horizontalDots.svg" alt="...">
                 </div>
             </div>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="secondSection flex justify-between pl-14.5 pr-4 mb-2.5">
+                <div class="secondSection flex justify-between pl-14.5 pr-4 mb-2.5 max-sm:px-2">
                     <div class="extraIconBox flex gap-1 items-center px-2">
                         <div class="photosIcon">
                             <img src="./svg/photos.svg" alt="photos">
@@ -208,7 +208,7 @@
 
 
         <section
-            class="rightContainer h-screen flex flex-col gap-4 pl-8 pr-14 py-1 text-white bg-black text-[15px] overflow-y-auto custom-scroll">
+            class="rightContainer h-screen flex flex-col gap-4 pl-8 pr-14 py-1 text-white bg-black text-[15px] overflow-y-auto custom-scroll max-xl:px-2 max-md:hidden!">
             <div class="searchBar flex py-2 px-3 rounded-4xl border border-neutral-700 gap-1">
                 <div class="searchLogo"><img class="invert-50!" src="./svg/explore.svg" alt=""></div>
                 <input type="search" class="focus:border-none focus:outline-none caret-sky-500 placeholder:text-white"
@@ -217,7 +217,7 @@
 
             <div
                 class="subscribeToPremium border border-neutral-700 rounded-2xl px-5 py-4 flex-col gap-2 leading-tight">
-                <div class="titleBar flex items-center gap-2">
+                <div class="titleBar flex items-center gap-2 max-lg:flex-col max-lg:items-start max-lg:gap-0">
                     <div class="title text-xl font-bold">Subscribe to Premium</div>
                     <div class="discount bg-[#004329] rounded-md px-1.5 py-0.5 font-medium text-[#61d6a3]">50% off</div>
                 </div>
@@ -238,7 +238,7 @@
                     <div class="news1">
                         <div class="newsHeadline font-bold">U.S. and Israel Strike Iran, Kill Khamenei in Operation Epic
                             Fury</div>
-                        <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
+                        <div class="newsMetadata">
                             <div class="viewedByBox flex">
                                 <div class="viewedBy z-3">
                                     <img src="img/narendraModi.jpg" alt="">
@@ -262,7 +262,7 @@
                     <div class="news2">
                         <div class="newsHeadline font-bold">Three U.S. service members killed in Iranian missile and
                             drone attacks during Operation</div>
-                        <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
+                        <div class="newsMetadata">
                             <div class="viewedByBox flex">
                                 <div class="viewedBy z-3">
                                     <img src="img/sacar.jpg" alt="">
@@ -286,7 +286,7 @@
                     <div class="news3">
                         <div class="newsHeadline font-bold">Anthropic Blacklisted by Trump After Rejecting Pentagon AI
                             Demands</div>
-                        <div class="newsMetadata flex items-center text-neutral-500 text-sm gap-2">
+                        <div class="newsMetadata">
                             <div class="viewedByBox flex">
                                 <div class="viewedBy z-3">
                                     <img src="img/donaldTrump.jpeg" alt="">
@@ -359,8 +359,8 @@
                 </div>
             </div>
 
-            <div class="footer flex flex-col text-xs text-neutral-500 px-5 mb-20 gap-2">
-                <div class="flex gap-2">
+            <div class="footer flex flex-col text-xs text-neutral-500 px-5 mb-20 gap-2 max-lg:px-2">
+                <div class="flex gap-2 max-lg:gap-1">
                     <a href="#">Terms of Service</a>
                     <span>|</span>
                     <a href="#">Privacy Policy</a>
@@ -368,7 +368,7 @@
                     <a href="#">Cookie Policy</a>
                     <span>|</span>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex gap-2 max-lg:gap-1">
                     <a href="#">Accessibility</a>
                     <span>|</span>
                     <a href="#">Ads info</a>
