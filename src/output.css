@@ -197,12 +197,6 @@
   .relative {
     position: relative;
   }
-  .right-4 {
-    right: calc(var(--spacing) * 4);
-  }
-  .right-5 {
-    right: calc(var(--spacing) * 5);
-  }
   .right-6 {
     right: calc(var(--spacing) * 6);
   }
@@ -211,12 +205,6 @@
   }
   .bottom-3 {
     bottom: calc(var(--spacing) * 3);
-  }
-  .bottom-4 {
-    bottom: calc(var(--spacing) * 4);
-  }
-  .bottom-5 {
-    bottom: calc(var(--spacing) * 5);
   }
   .z-1 {
     z-index: 1;
@@ -269,11 +257,17 @@
   .ml-12 {
     margin-left: calc(var(--spacing) * 12);
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
+  }
+  .hidden {
+    display: none;
   }
   .inline-flex {
     display: inline-flex;
@@ -572,6 +566,9 @@
   .wrap-break-word {
     overflow-wrap: break-word;
   }
+  .whitespace-pre-wrap {
+    white-space: pre-wrap;
+  }
   .text-\[\#61d6a3\] {
     color: #61d6a3;
   }
@@ -605,6 +602,10 @@
   }
   .brightness-50 {
     --tw-brightness: brightness(50%);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .brightness-100 {
+    --tw-brightness: brightness(100%);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .invert {
@@ -697,8 +698,6 @@
 }
 .middleContainer>div {
   display: flex;
-  border-bottom-style: var(--tw-border-style);
-  border-bottom-width: 1px;
   border-color: var(--color-neutral-700);
   background-color: var(--color-black);
   color: var(--color-white);
@@ -742,6 +741,19 @@
 .someonePost .topSection div {
   display: flex;
   align-items: center;
+}
+.someonePost > div {
+  margin-top: calc(var(--spacing) * 1);
+  display: flex;
+  cursor: pointer;
+  border-bottom-style: var(--tw-border-style);
+  border-bottom-width: 1px;
+  border-color: var(--color-neutral-700);
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-neutral-950);
+    }
+  }
 }
 .someonePost .postBox img {
   width: calc(var(--spacing) * 5);

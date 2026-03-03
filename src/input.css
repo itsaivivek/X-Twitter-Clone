@@ -17,7 +17,7 @@
 }
 
 .middleContainer>div {
-    @apply flex border-b border-neutral-700 bg-black text-white;
+    @apply flex border-neutral-700 bg-black text-white;
 }
 
 .middleContainer .feedHeader>div {
@@ -43,6 +43,10 @@
 
 .someonePost .topSection div{
     @apply flex items-center;
+}
+
+.someonePost > div{
+    @apply flex border-b border-neutral-700 mt-1 hover:bg-neutral-950 cursor-pointer;
 }
 
 .someonePost .postBox img {
