@@ -4,6 +4,24 @@
     --filter-custom-teal: invert(53%) sepia(87%) saturate(2852%) hue-rotate(176deg) brightness(98%) contrast(93%);
 }
 
+/* Add the plugin here */
+@plugin "tailwind-scrollbar";
+
+/* Optional: Configure the plugin with options */
+@plugin "tailwind-scrollbar" {
+  nocompatible: true;
+  preferredStrategy: 'pseudoelements';
+}
+
+@layer utilities {
+  .custom-scroll {
+    @apply scrollbar-thin 
+    scrollbar-thumb-white/50 
+    hover:scrollbar-thumb-white/70 
+    scrollbar-track-transparent;
+  }
+}
+
 .leftContainer img {
     @apply w-7 invert;
 }
