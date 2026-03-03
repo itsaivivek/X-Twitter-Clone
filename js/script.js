@@ -128,7 +128,37 @@ postButton.addEventListener('click', async () => {
 }
 )
 
-document.getElementById('featureBtn').addEventListener('click', function() {
-    var message = document.getElementById('unavailableMessage');
-    message.style.display = 'block'; // Show the message
-});
+function showUnavailableMessage(){
+    document.getElementById('featureNotAvailable').classList.remove('hidden')
+      setTimeout(() => {
+          document.getElementById('featureNotAvailable').classList.add('hidden')
+      }, 1000);
+}
+
+// Shows the feature not available when clicking on buttons in left constainer
+Array.from(document.querySelector(".leftContainer").children).forEach((e) => {
+  e.addEventListener('click', () => {
+      showUnavailableMessage();
+  }
+  )
+}) 
+
+// Shows the feature not available when clicking on fixed buttons in screen
+Array.from(document.querySelector(".fixedButtons").children).forEach((e) => {
+  e.addEventListener('click', () => {
+    showUnavailableMessage();
+  }
+  )
+}
+)
+
+// shows the feature not available for Following Tab section
+document.querySelector(".followingTab").addEventListener('click', () => {
+  showUnavailableMessage();
+}
+)
+
+// shows the feature not available for subscribe btn
+document.getElementById('subscribe').addEventListener('click', ()=>{
+    showUnavailableMessage();
+})

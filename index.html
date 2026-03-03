@@ -81,7 +81,7 @@
         </section>
 
 
-        <section class="middleContainer border-x border-neutral-700 h-screen flex flex-col">
+        <section class="middleContainer border-x border-neutral-700 h-screen flex flex-col overflow-y-scroll">
             <div class="feedHeader min-h-14 border-b">
                 <div class="forYouTab font-bold relative cursor-pointer">
                     <div class="underline w-14 bottom-0 rounded-4xl h-1 bg-sky-500 absolute"></div>For you
@@ -223,7 +223,7 @@
                 </div>
                 <div class="description">Get rid of ads, see your analytics, boost your replies and unlock 20+ features.
                 </div>
-                <div class="subscribe w-fit px-4 py-2 rounded-4xl bg-sky-500 font-bold mt-2 cursor-pointer">Subscribe
+                <div id="subscribe" class="subscribe w-fit px-4 py-2 rounded-4xl bg-sky-500 font-bold mt-2 cursor-pointer">Subscribe
                 </div>
             </div>
 
@@ -394,6 +394,8 @@
         </div>
 
     </div>
+
+    <div id="featureNotAvailable" class="hidden text-black text-sm font-bold bg-sky-500 text-shadow-2xs shadow-sky-600 shadow-2xs px-3 py-1 rounded-r-4xl rounded-bl-4xl fixed bottom-10 left-[50%] -translate-[50%] brightness-75">This feature is not available</div>
 
     <script src="./js/script.js"></script>
 </body>
